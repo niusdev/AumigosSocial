@@ -5,7 +5,7 @@ import Dogs from "../assets/dogs.svg?react";
 import { UserContext } from "../UserContext";
 
 const Header = () => {
-  const { data } = useContext(UserContext);
+  const { data, userLogout } = useContext(UserContext);
 
   return (
     <header className={styles.header}>
@@ -14,9 +14,12 @@ const Header = () => {
           <Dogs />
         </Link>
         {data ? (
-          <Link to="/conta" className={styles.login}>
-            {data.nome}
-          </Link>
+          <div>
+            <Link to="/conta" className={styles.login}>
+              {data.nome}
+            </Link>
+            <button onClick={userLogout}>Sair</button>
+          </div>
         ) : (
           <Link to="/login" className={styles.login}>
             Login | Criar

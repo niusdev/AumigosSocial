@@ -3,29 +3,31 @@ module.exports = {
     browser: true,
   },
   extends: [
-    'eslint:recommended',
-    'plugin:react/recommended',
-    'plugin:react/jsx-runtime',
-    'plugin:react-hooks/recommended',
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:react/jsx-runtime",
+    "plugin:react-hooks/recommended",
   ],
   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
+    ecmaVersion: "latest",
+    sourceType: "module",
     ecmaFeatures: {
       jsx: true,
     },
   },
   settings: {
     react: {
-      version: 'detect',
+      version: "detect",
     },
   },
-  plugins: ['react-refresh'],
+  plugins: ["react-refresh"],
   rules: {
-    'react-refresh/only-export-components': 'off',
-    'react/react-in-jsx-scope': 'off',
-    'react/prop-types': 'off',
-    'no-unsafe-finally': 'off',
-    'react/jsx-key': 'off',
+    "no-unused-vars": "error",
+    "react-hooks/exhaustive-deps": "warn",
+    "react-hooks/rules-of-hooks": "error",
+    "react-refresh/only-export-components": [
+      "warn",
+      { allowConstantExport: true },
+    ],
   },
 };
