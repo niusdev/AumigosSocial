@@ -51,6 +51,9 @@ a {
   margin: 0 auto;
 }
 
+.mainContainer {
+  margin-top: 4rem;
+}
 
 .title {
   font-family: var(--type-second);
@@ -62,7 +65,7 @@ a {
 }
 
 .title::after {
-  content: '';
+  content: "";
   display: block;
   width: 1.5rem;
   height: 1.5rem;
@@ -70,12 +73,12 @@ a {
   position: absolute;
   bottom: 5px;
   left: -5px;
-  border-radius: .2rem;
+  border-radius: 0.2rem;
   z-index: -1;
-  -webkit-border-radius: .2rem;
-  -moz-border-radius: .2rem;
-  -ms-border-radius: .2rem;
-  -o-border-radius: .2rem;
+  -webkit-border-radius: 0.2rem;
+  -moz-border-radius: 0.2rem;
+  -ms-border-radius: 0.2rem;
+  -o-border-radius: 0.2rem;
 }
 
 .animeLeft {
