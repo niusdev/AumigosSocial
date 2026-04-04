@@ -21,7 +21,7 @@
   -o-border-radius: 0.2rem;
 }
 
-.photo img {
+.photo > div {
   grid-area: 1/1;
 }
 
