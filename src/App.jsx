@@ -8,6 +8,7 @@ import User from "./components/User/User";
 import "./App.css";
 import UserStorage from "./UserStorage";
 import ProtectedRoute from "./components/Helpers/ProtectedRoute";
+import Photo from "./components/Photo/Photo";
 function App() {
   return (
     <div>
@@ -25,6 +26,7 @@ function App() {
                 </ProtectedRoute>
               }
             />
+            <Route path="foto/:id" element={<Photo />} />
           </Routes>
           <Footer />
         </UserStorage>
